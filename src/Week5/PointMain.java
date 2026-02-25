@@ -26,13 +26,13 @@ public class PointMain{
 
 
         // create two Point objects
-        Point p1 = new Point();
-        p1.x = 7;
-        p1.y = 2;
+        Point p1 = new Point(7,2);
+        // p1.x = 7;
+        // p1.y = 2;
 
-        Point p2 = new Point();
-        p2.x = 4;
-        p2.y = 3;
+        Point p2 = new Point(4,3);
+        // p2.x = 4;
+        // p2.y = 3;
 
 	// print the points 
         System.out.println("p1 is (" + p1.x + "," + p1.y + ")"); 
@@ -51,7 +51,21 @@ public class PointMain{
 
         // print the points 
         System.out.println("p1 is (" + p1.x + "," + p1.y + ")"); 
-        System.out.println("p2 is (" + p2.x + "," + p2.y + ")");       
+        System.out.println("p2 is (" + p2.x + "," + p2.y + ")");   
+        
+        //System.out.println("p1 is: " + p1);    
+        System.out.println("p1 is: " + p1.toString());    
+        System.out.println("p2 is: " + p2.toString());   
+        
+
+        int i = 42;    
+        String s = "hello";
+        Point p = new Point();
+
+        System.out.println("i is " + i);
+        System.out.println("s is " + s);
+        System.out.println("p is " + p);
+
 
     }
 
