@@ -1,6 +1,6 @@
 package Week5;
 
-import java.awt.*;
+//import java.awt.*;
 
 public class PointExample1{
    public static void main(String[] args){

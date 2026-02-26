@@ -18,8 +18,9 @@ public class Point{
 
      // shifts this point’s location by the given amount 
      public void translate(int dx, int dy){
-          x += dx;
-          y += dy;
+          // x += dx;
+          // y += dy;
+	     setLocation(x + dx, y + dy);
      }
 
      public void setLocation(int newX, int newY){
@@ -27,10 +28,36 @@ public class Point{
           y = newY;
      }
 
+     public double distance(Point other){
+          int dx = x - other.x;
+          int dy = y - other.y;
+          return Math.sqrt(dx * dx + dy * dy);
+     }
+
+
 
      public String toString(){
           return "(" + x + ", " + y + ")";    
      }
+
+     // public boolean equals(Point other) {
+     //      return x == other.x && y == other.y;
+     // }
+     public boolean equals(Object o) {
+          if (o instanceof Point) {
+               Point other = (Point) o;
+               return x == other.x && y == other.y;
+          } else {
+               return false;
+          }
+     }
+
+
+
+     public double distanceFromOrigin(){
+          return Math.sqrt(x * x + y * y);
+     }
+
 
 
 
