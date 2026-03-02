@@ -1,19 +1,30 @@
 package Week5;
 
 public class Point{
-     int x;
-     int y;
+     public int x;
+     public int y;
 
       // constructs a new point with the given (x, y) location
-     public Point(int initialX, int initialY){
-          x = initialX;
-          y = initialY;
+     public Point(int x, int y){
+          // this.x = x;
+          // this.y = y;
+          setLocation(x, y);
      }
 
      public Point(){
-          x = 0;
-          y = 0;
+          // x = 0;
+          // y = 0;
+          this(0,0);
      }
+
+     // public Point(Point p){
+     //      this.x = p.x;
+     //      this.y = p.y;
+     // }
+     public Point(Point p){
+          this(p.x, p.y);
+     }
+
 
 
      // shifts this point’s location by the given amount 
@@ -23,9 +34,9 @@ public class Point{
 	     setLocation(x + dx, y + dy);
      }
 
-     public void setLocation(int newX, int newY){
-          x = newX;
-          y = newY;
+     public void setLocation(int x, int y){
+          this.x = x;
+          this.y = y;
      }
 
      public double distance(Point other){
