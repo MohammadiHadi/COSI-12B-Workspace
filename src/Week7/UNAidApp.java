@@ -17,9 +17,10 @@ public class UNAidApp {
         Scanner console = new Scanner(System.in);
         Point center = new Point();
         System.out.print("Center coordinate x? ");
-        center.x = console.nextInt();
+        int centerX = console.nextInt();
         System.out.print("Center coordinate y? ");
-        center.y = console.nextInt();
+        int centerY = console.nextInt();
+        center.setLocation(centerX, centerY);
         System.out.print("Delivery radius? ");
         int radius = console.nextInt();
             // prints out the cities
@@ -32,8 +33,9 @@ public class UNAidApp {
         Point[] cities = new Point[numCities];
         for (int i = 0; i < cities.length; i++) {
      	   cities[i] = new Point();
-            cities[i].x = input.nextInt();  // read city x/y from file
-            cities[i].y = input.nextInt();
+            // cities[i].x = input.nextInt();  // read city x/y from file
+            // cities[i].y = input.nextInt();
+            cities[i].setLocation(input.nextInt(), input.nextInt());
         }
         return cities;
     }
@@ -43,7 +45,7 @@ public class UNAidApp {
         for (int i = 0; i < cities.length; i++) {
             double dist = cities[i].distance(center);
         if (dist <= radius) {
-            System.out.println("Supplies delivered: (" + cities[i].x +  				"," + cities [i].y + ")");
+            System.out.println("Supplies delivered: (" + cities[i].getX() +  				"," + cities [i].getY() + ")");
         }
         }
     }
