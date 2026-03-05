@@ -32,8 +32,8 @@ public class UNAidApp {
         Point[] cities = new Point[numCities];
         for (int i = 0; i < cities.length; i++) {
      	   cities[i] = new Point();
-	   cities[i].x = input.nextInt();  // read city x/y from file
-	   cities[i].y = input.nextInt();
+            cities[i].x = input.nextInt();  // read city x/y from file
+            cities[i].y = input.nextInt();
         }
         return cities;
     }

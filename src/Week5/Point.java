@@ -1,8 +1,8 @@
 package Week5;
 
 public class Point{
-     public int x;
-     public int y;
+     private int x;
+     private int y;
 
       // constructs a new point with the given (x, y) location
      public Point(int x, int y){
@@ -34,10 +34,17 @@ public class Point{
 	     setLocation(x + dx, y + dy);
      }
 
-     public void setLocation(int x, int y){
+     // Sets this Point's location to be the given (x, y).
+     // Throws an exception if newX or newY is negative.
+     // Postcondition: x >= 0 && y >= 0
+     public void setLocation(int x, int y) {
+          if (x < 0 || y < 0) {
+               throw new IllegalArgumentException();
+          }
           this.x = x;
           this.y = y;
      }
+
 
      public double distance(Point other){
           int dx = x - other.x;
@@ -68,6 +75,33 @@ public class Point{
      public double distanceFromOrigin(){
           return Math.sqrt(x * x + y * y);
      }
+
+
+     //A "read-only" access to the x field ("accessor")
+     public int getX(){
+          return x;
+     }
+
+
+
+     // Allows clients to change the x field("mutator")
+     // public void setX(int x){
+     //      this.x = x;
+     // }
+
+     //A "read-only" access to the y field ("accessor")
+     public int getY(){
+          return y;
+     }
+
+
+
+     // Allows clients to change the y field("mutator")
+     // public void setY(int y){
+     //      this.y = y;
+     // }
+
+
 
 
 

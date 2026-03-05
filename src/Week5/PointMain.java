@@ -35,8 +35,8 @@ public class PointMain{
         // p2.y = 3;
 
 	// print the points 
-        System.out.println("p1 is (" + p1.x + "," + p1.y + ")"); 
-        System.out.println("p2 is (" + p2.x + "," + p2.y + ")");        
+        System.out.println("p1 is (" + p1.getX() + "," + p1.getY() + ")"); 
+        System.out.println("p2 is (" + p2.getX() + "," + p2.getY() + ")");        
 
         // translate each point to a new location
         // p1.x += 11;
@@ -50,8 +50,8 @@ public class PointMain{
 
 
         // print the points 
-        System.out.println("p1 is (" + p1.x + "," + p1.y + ")"); 
-        System.out.println("p2 is (" + p2.x + "," + p2.y + ")");   
+        System.out.println("p1 is (" + p1.getX() + "," + p1.getY() + ")"); 
+        System.out.println("p2 is (" + p2.getX() + "," + p2.getY() + ")");   
         
         //System.out.println("p1 is: " + p1);    
         System.out.println("p1 is: " + p1.toString());    
