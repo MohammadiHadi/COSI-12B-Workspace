@@ -1,6 +1,9 @@
 package Week7;
 
 public class Lawyer extends Employee {
+	public Lawyer(int years){
+		super(years);
+	}
 // overrides getVacationForm method in Employee class
 	public String getVacationForm() {
 		return "pink";

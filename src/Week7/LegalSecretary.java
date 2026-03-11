@@ -7,7 +7,9 @@ public class LegalSecretary extends Secretary {
     }
 
     public double getSalary() {
-        return 45000.0;      //$45,000.00
+        	double baseSalary = super.getSalary();
+	        return baseSalary + 5000.0;
+
     }
 }
 

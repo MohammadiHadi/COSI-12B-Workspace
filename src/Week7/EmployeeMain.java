@@ -4,7 +4,7 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 	   System.out.print("Employee:");
-	   Employee employee1 = new Employee();
+	   Employee employee1 = new Employee(6);
 	   System.out.print(employee1.getHours() + ", ");
 	   System.out.printf("$%.2f, ", employee1.getSalary());
 	   System.out.print(employee1.getVacationDays() + ", ");
@@ -26,7 +26,7 @@ public class EmployeeMain {
 	//    System.out.println(employee3.getVacationForm());
 
        System.out.print("Marketer: ");
-	   Marketer employee5 = new Marketer();
+	   Marketer employee5 = new Marketer(3);
 	   System.out.print(employee5.getSalary() + "\n ");
 
     //    System.out.print("Legal Secretary: ");
@@ -34,7 +34,7 @@ public class EmployeeMain {
 	//    System.out.print(employee5.getSalary() + "\n ");
 
        System.out.println("Lawyer:");
-	   Lawyer employee3 = new Lawyer();
+	   Lawyer employee3 = new Lawyer(2);
 	   System.out.print(employee3.getHours() + ", ");
 	   System.out.printf("$%.2f, ", employee3.getSalary());
 	   System.out.print(employee3.getVacationDays() + ", ");
