@@ -9,6 +9,10 @@ public class Employee {
         this.years = years;
     }
 
+    public int getYears() {
+        return years;
+    }
+
     public int getHours() {
         return 40;           // works 40 hours/week
     }
@@ -18,8 +22,14 @@ public class Employee {
     }
     
     public int getVacationDays() {
-        return 10+ 2 * years;           // 2 weeks' paid vacation plus seniority bonus
+        return 10 + getSeniorityBonus(); // 2 weeks' paid vacation plus seniority bonus
     }
+
+
+    public int getSeniorityBonus() {
+        return 2 * years;
+    }
+
 
     public String getVacationForm() {
         return "yellow";     // use the yellow form

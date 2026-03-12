@@ -17,5 +17,10 @@ public class Lawyer extends Employee {
     public void sue() {
 		System.out.println("Suing.....");;
 	}
+
+	public double getSalary(){
+		return super.getSalary() + 5000 * getYears();
+
+	}
 }
 

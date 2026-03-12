@@ -11,7 +11,7 @@ public class EmployeeMain {
 	   System.out.println(employee1.getVacationForm());
 		
 	   System.out.print("Secretary: ");
-	   Secretary employee2 = new Secretary();
+	   Secretary employee2 = new Secretary(1);
 	   System.out.print(employee2.getHours() + ", ");
 	   System.out.printf("$%.2f, ", employee2.getSalary());
 	   System.out.print(employee2.getVacationDays() + ", ");
@@ -39,10 +39,12 @@ public class EmployeeMain {
 	   System.out.printf("$%.2f, ", employee3.getSalary());
 	   System.out.print(employee3.getVacationDays() + ", ");
 	   System.out.println(employee3.getVacationForm());
+	   System.out.println(employee3.getSalary());
+
        employee3.sue();
 		
 	   System.out.print("Legal Secretary: ");
-	   LegalSecretary employee4 = new LegalSecretary();
+	   LegalSecretary employee4 = new LegalSecretary(3);
 	   System.out.print(employee4.getHours() + ", ");
 	   System.out.printf("$%.2f, ", employee4.getSalary());
 	   System.out.print(employee4.getVacationDays() + ", ");
