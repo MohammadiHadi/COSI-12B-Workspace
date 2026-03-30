@@ -19,12 +19,25 @@ public class ArrayListDemo {
         list.add(1, "cs12");
         System.out.println("list = " + list);
 
-        System.out.println("before remove list = " + list);
-        list.remove(0);
-        list.remove(1);
-        System.out.println("after remove list = " + list);
+        // System.out.println("before remove list = " + list);
+        // list.remove(0);
+        // list.remove(1);
+        // System.out.println("after remove list = " + list);
 
-        System.out.println("List size is: " + list.size());
+        // System.out.println("List size is: " + list.size());
+
+        if (list.contains("Chemistry")) {
+            System.out.println("Chemistry is in the list");
+        } else {
+            System.out.println("Chemistry is not found.");
+        }
+
+        if (list.contains("Brandeis")) {
+            System.out.println("Brandeis is in the list");
+        } else {
+            System.out.println("Brandeis is not found.");
+        }
+
 
 
     }
