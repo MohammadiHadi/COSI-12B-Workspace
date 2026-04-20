@@ -11,6 +11,7 @@ public class Vocabulary1A {
         Scanner input2 = new Scanner(new File("test2.txt"));
         ArrayList<String> list1 = getWords(input1);
         ArrayList<String> list2 = getWords(input2);
+        // System.out.println(Collections.max(list1));
         ArrayList<String> overlap = getOverlap(list1, list2);
 
 
